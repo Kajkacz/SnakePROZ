@@ -1,0 +1,3 @@
+POwiekszyc plansze
+Lepszy score/scoreboard
+JavaDocs
