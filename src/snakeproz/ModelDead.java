@@ -1,23 +1,31 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package snakeproz;
 import java.util.LinkedList;
 /**
  *
  * @author Kajkacz
+ * Class inheriting from Model class for the Strategy design pattern, implementing
+ * behaviour for the dead snake
  */
     public class ModelDead extends Model{
+        /**
+        * Function for moving snake - no movement after dying
+        */
         @Override 
         public void moveSnake(){
         
         }
+        /**
+        * Returning label to be displayed - in this case "Game Over" and final score
+        */
         @Override
         public String getLabel(){
             return "GAME OVER!Score is " + score;
         }
+        /**
+        * Constructor copying state from provided model
+        * @param  model to be copied, except for fruit
+        * Direction set to Stop
+        */
         public ModelDead(Model model){
         super();
         this.snakeSegments = new LinkedList<SnakeElement>(model.getSegments());

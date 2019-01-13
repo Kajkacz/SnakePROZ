@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package snakeproz;
 
 import javafx.scene.input.KeyEvent;
@@ -10,12 +5,19 @@ import javafx.event.EventHandler;
 
 
 /**
- *
+ * Controller for MVC 
  * @author Kajkacz
+ * @variable model - model from MVC
+ * @variable view - view from MVC
  */
 public class Controller  {
    Model model;
    View view;
+   /**
+    * 
+    * @param m - model from MVC
+    * @param v - View from MVC
+    */
    public Controller(Model m,View v){
        model = m;
        view = v;
